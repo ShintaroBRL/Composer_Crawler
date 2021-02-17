@@ -4,12 +4,13 @@
     "type": "library",
     "authors": [
         {
-            "name": "Juliano Lira",
-            "email": "Juliano.Florentino@forseti.com.br"
+            "name": "Shintaro",
+            "email": "juliano0forum@gmail.com"
         }
     ],
     "require": {
         "guzzlehttp/guzzle": "^7.2",
-        "symfony/dom-crawler": "^5.2"
+        "symfony/dom-crawler": "^5.2",
+        "symfony/css-selector": "^5.2"
     }
 }
