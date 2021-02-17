@@ -6,7 +6,7 @@ use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
 class Buscador {
-    
+
     /**
      *  @var ClientInterface
      */
@@ -16,18 +16,18 @@ class Buscador {
      *  @var Crawler
      */
     private $crawler;
-    
+
     public function __construct(ClientInterface $httpClient, Crawler $crawler){
-        $this->$httpClient = $httpClient;
-        $this->$crawler = $crawler;
+        $this->httpClient = $httpClient;
+        $this->crawler = $crawler;
     }
 
-    public function buscar(string $url = null): array{
+    public function buscar(string $url): array{
 
-        $responce = $httpClient->request('GET',$url);
-        $crawler->addHtmlContent($responce->getBody());
-        $DOMResponse = $crawler->filter('span.card-curso__nome');
-        
+        $responce = $this->httpClient->request('GET',$url);
+        $this->crawler->addHtmlContent($responce->getBody());
+        $DOMResponse = $this->crawler->filter('span.card-curso__nome');
+
         $cursos = [];
 
         foreach ($DOMResponse as $curso) {
