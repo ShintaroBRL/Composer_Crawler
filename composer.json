@@ -1,0 +1,15 @@
+{
+    "name": "shintaro/composer_crawler",
+    "description": "Crawler tutorial alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Juliano Lira",
+            "email": "Juliano.Florentino@forseti.com.br"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "symfony/dom-crawler": "^5.2"
+    }
+}
