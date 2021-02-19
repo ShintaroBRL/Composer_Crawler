@@ -2,6 +2,7 @@
     "name": "shintaro/composer_crawler",
     "description": "Crawler tutorial alura",
     "type": "library",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Shintaro",
